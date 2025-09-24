@@ -21,3 +21,14 @@ description: "We want to test Mermaid"
     %% subgraph2 inherits the direction of the top-level graph (LR)
     outside ---> top2
 ```
+
+```mermaid
+gantt
+  title Projektzeitplan
+  dateFormat  YYYY-MM-DD
+  section Abschnitt 1
+  Aufgabe 1           :a1, 2025-10-01, 10d
+  Aufgabe 2           :after a1  , 5d
+  section Abschnitt 2
+  Aufgabe 3           :2025-10-15  , 7d
+```
