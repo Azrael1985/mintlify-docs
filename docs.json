@@ -16,18 +16,18 @@
           {
             "group": "Getting started",
             "pages": [
+               {
+            "group": "Customization",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
               "index",
               "quickstart",
               "development",
               "Mermaid",
               "tests"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
             ]
           },
           {
