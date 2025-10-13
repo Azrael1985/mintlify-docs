@@ -1,0 +1,75 @@
+---
+title: "AquaPure Bottle"
+description: "Trinkflasche mit System"
+---
+
+### 1. Produktübersicht
+
+Die _AquaPure Bottle_ ist eine tragbare, intelligente Trinkflasche, die sauberes Wasser auch unterwegs sicherstellt. Zielgruppe sind Outdoor-Enthusiasten, Vielreisende und gesundheitsbewusste Konsument:innen. Die Flasche kombiniert **Filtertechnologie**, **IoT-Integration** und **Gamification**.
+
+Die Besonderheit liegt darin, dass neben der klassischen Trinkflasche auch ein **aktives Hydrations-Management-System** integriert ist. Damit geht die Flasche über eine reine Filterfunktion hinaus und wird zum persönlichen Gesundheitsassistenten.
+
+### 2. Features im Detail
+
+- **Automatische Filterung**
+  - Mehrstufig: Aktivkohle + UV-C-LED
+  - Entfernt 99,99 % Bakterien, Viren, Schwermetalle
+- **Hydrations-Tracking**
+  - Sensoren messen Füllstand und Trinkmenge
+  - Daten werden via BLE an die App übertragen
+- **Selbstreinigung**
+  - UV-C-Reinigung nach jedem Einsatz (automatisch oder manuell via App)
+- **Gamification & Motivation**
+  - Nutzer:innen setzen Trinkziele
+  - Community-Vergleiche (anonymisiert)
+  - Badge-System für erreichte Ziele
+
+### 3. Technische Architektur
+
+- **Hardware-Komponenten**
+  - UV-C-LED im Flaschenkopf
+  - Lithium-Ionen-Akku mit 7 Tagen Laufzeit
+  - Kapazitive Sensoren + Drucksensor für Füllstand
+- **Software-Schichten**
+  - Embedded Software in MicroPython auf ESP32
+  - Kommunikation via BLE 5.0
+  - Mobile App (React Native) mit Firebase-Backend
+- **Cloud-Dienste**
+  - Authentifizierung via Firebase Auth
+  - Speicherung in Firestore (NoSQL)
+  - OTA-Updates für Firmware
+
+### 4. Sicherheit & Datenschutz
+
+- BLE-Kommunikation verschlüsselt (AES-128)
+- Anonymisierung von Nutzerprofilen in Firestore
+- Möglichkeit, alle Daten lokal zu speichern (Offline-Modus)
+
+### 5. Use Cases
+
+- **Outdoor-Abenteuer**: Sicheres Wasser in abgelegenen Regionen
+- **Reisende**: Schutz vor verunreinigtem Leitungswasser
+- **Büroalltag**: Motivation, mehr Wasser zu trinken
+- **Gesundheitsbewusste Personen**: exaktes Monitoring der Flüssigkeitsaufnahme
+
+### 6. Bekannte Limitierungen
+
+- Filterwechsel nach ca. 6 Monaten erforderlich
+- Nicht geeignet für Salzwasser
+- Akkulaufzeit sinkt bei intensiver UV-C-Nutzung auf 3 Tage
+
+### 7. Weiterentwicklung
+
+- Integration mit Fitness-Apps (Apple Health, Google Fit)
+- Smarte Deckel-Variante mit E-Ink Display
+- Solar-Deckel zur Ladeunterstützung
+
+### 8. Teststrategie
+
+- **Unit-Tests** für BLE-Module und Sensormessungen
+- **Integrationstests** App ↔ Cloud ↔ Flasche
+- **Hygienetests**: Wirksamkeit der UV-C-Desinfektion (Laborbedingungen)
+- **Akkutests**: Ladezyklen, Langzeitnutzung
+- **Benutzerstudien**: Usability und Gamification-Feedback
+
+ 

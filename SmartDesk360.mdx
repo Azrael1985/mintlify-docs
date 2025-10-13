@@ -1,0 +1,72 @@
+---
+title: "SmartDesk 360"
+description: "Super Smartdesk, kann so ziemlich alles ist super geil"
+---
+
+
+### 1. Produktübersicht
+
+Der _SmartDesk 360_ ist ein vernetzter, höhenverstellbarer Arbeitsplatz, der moderne Ergonomie mit intelligenter Technologie verbindet. Das Produkt ist für offene Büroumgebungen, Homeoffice-Setups und Co-Working-Spaces konzipiert. Der Fokus liegt auf **Gesundheit**, **Produktivität** und **Transparenz für Unternehmen**.
+
+Der Markt für Smart-Office-Möbel wächst stark, und der _SmartDesk 360_ positioniert sich in einem Premium-Segment, das sowohl Hardwarequalität als auch eine **nahtlose Softwareintegration** in bestehende Unternehmens-IT bietet.
+
+### 2. Features im Detail
+
+- **Automatische Höhenanpassung**\
+   Über Profile erkennt der Tisch Nutzer:innen anhand von RFID-Karten oder der Smartphone-App. Die Tischhöhe wird individuell justiert, mit Millimeterpräzision.
+- **Bewegungserinnerung & Gesundheitsfunktionen**
+  - Sensoren erfassen Sitz- und Stehzeiten.
+  - Farbcodierte LED-Ringe zeigen den aktuellen Aktivitätsstatus.
+  - Push-Nachrichten (optional) erinnern an Haltungswechsel.
+- **Cloud-Management-Dashboard**
+  - Admins sehen Auslastungsstatistiken (z. B. Durchschnittsnutzungsdauer pro Tisch).
+  - Wartungsintervalle und Fehlerdiagnosen können zentral gesteuert werden.
+- **Integration**
+  - Google Calendar / Outlook für Meeting-Sync
+  - Microsoft Teams und Slack für Benachrichtigungen
+
+### 3. Technische Architektur
+
+- **Hardware-Komponenten**
+  - Linearantriebe mit Hall-Sensoren zur Positionsbestimmung
+  - Steuerplatine: ARM Cortex-M4 basierter Mikrocontroller
+  - WLAN-Modul + Bluetooth 5.0 für Kommunikation
+- **Software-Schichten**
+  - Embedded-Firmware: C++
+  - Middleware: MQTT-Protokoll zur Cloud-Kommunikation
+  - Backend: Node.js mit GraphQL-API
+  - Frontend: WebApp (React) + MobileApp (Flutter)
+
+### 4. Sicherheit & Datenschutz
+
+- TLS-gesicherte Kommunikation (TLS 1.3)
+- Lokale Datenhaltung nur temporär, Synchronisation in EU-Rechenzentren
+- DSGVO-konformes Logging
+- Optionales **Zero-Knowledge-Profiling** für anonyme Arbeitsplatzstatistiken
+
+### 5. Use Cases
+
+- **Einzelpersonen**: automatische Haltungsoptimierung im Homeoffice
+- **Unternehmen**: Monitoring von Arbeitsplatz-Auslastung, Energieverbrauchsoptimierung
+- **Co-Working-Spaces**: Flexible Arbeitsplatzvergabe basierend auf Nutzerprofilen
+
+### 6. Bekannte Limitierungen
+
+- Abhängigkeit von Cloud-Diensten → eingeschränkte Offline-Funktion
+- Motoren müssen regelmäßig gewartet werden (ca. alle 2 Jahre)
+- Maximalgewicht: 120 kg, nicht für schwere Laboraufbauten geeignet
+
+### 7. Weiterentwicklung
+
+- KI-gestützte Ergonomie-Empfehlungen
+- Erweiterung um Smart-Lighting-Steuerung
+- Integration mit Wearables (Apple Watch, Garmin) für Gesundheitsdaten
+
+### 8. Teststrategie
+
+- **Unit-Tests** für Firmware-Funktionen
+- **End-to-End-Tests** für Cloud-Integration (Szenario: User → Tisch → Cloud → App)
+- **Stresstests**: Belastung bis max. Gewicht
+- **Sicherheitstests**: Penetrationstests für Cloud- und App-Kommunikation
+
+ 
